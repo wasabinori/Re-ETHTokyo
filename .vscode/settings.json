@@ -1,0 +1,5 @@
+{
+    "solidity.defaultCompiler": "localNodeModule",
+    "solidity.packageDefaultDependenciesDirectory": "path/to/sub/dir/node_modules",
+    "solidity.remappings":["@openzeppelin/=/Users/john/workspace/myproject/smart_contract/node_modules/@openzeppelin"]
+}

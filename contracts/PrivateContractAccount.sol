@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 import "@openzeppelin/contracts/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol";
 
-import "../node_modules/@account-abstraction/contracts/core/BaseAccount.sol";
+import "@account-abstraction/contracts/core/BaseAccount.sol";
 
 /**
   * minimal account.
@@ -107,6 +107,7 @@ contract PublicContractAccount is SimpleAccount {
     //Add requirement validateFX
     function _validateTargetAccount(address target) {
         require(target == PublicContractAccount.address());
+        
 
     }
 
